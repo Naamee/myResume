@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col snap-start min-h-lvh items-center justify-center bg-black text-gray-200">
+    <div class="flex flex-col snap-start min-h-lvh w-full items-center justify-center text-gray-200 bg-gradient-5 from-blue-950/30 from-70% to-80% to-black">
         <h1 class="text-5xl">Education</h1>
         <div class="mt-5 text-center divide-y divide-dashed divide-white/30 ">
             <div class="flex flex-col rounded-sm p-3">
