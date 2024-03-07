@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 
 const props = defineProps({
-  btnText: String
+  btnText: String,
 })
 
 const isHidden = ref(false)
@@ -10,10 +10,9 @@ const isHidden = ref(false)
 
 <template>
   <div @mouseover="isHidden = true" @mouseleave="isHidden = false" class="flex space-x-5 items-center">
-    <button class="w-3 h-3 bg-white rounded-sm border border-sky-300"></button>
+    <button class="w-3 h-3 rounded-sm border border-sky-300"></button>
     <Transition>
         <p v-if="isHidden" class="absolute mt-10 -left-5 text-nowrap text-sm text-white">{{ props.btnText }}</p>
-        <!-- <p v-else class="blur-sm absolute text-nowrap text-sm text-white">{{ props.btnText }}</p> -->
     </Transition>
   </div>
 </template>
