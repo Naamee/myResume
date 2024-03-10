@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const props = defineProps({
   btnText: String,
-  highlight: String
+  isVisible: Boolean,
 })
 
 const isHidden = ref(false)
@@ -11,7 +11,7 @@ const isHidden = ref(false)
 
 <template>
   <div @mouseover="isHidden = true" @mouseleave="isHidden = false" class="flex space-x-5 items-center">
-    <button class="w-3 h-3 rounded-sm border border-sky-300" :class="props.highlight===props.btnText?'bg-red':'bg-white'"></button>
+    <button class="w-3 h-3 rounded-full border border-gray-800" :class="props.isVisible===true?'bg-sky-950':'bg-gray-400'"></button>
     <Transition>
         <p v-if="isHidden" class="absolute mt-10 -left-5 text-nowrap text-sm text-white">{{ props.btnText }}</p>
     </Transition>

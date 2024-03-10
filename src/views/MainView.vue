@@ -10,12 +10,12 @@ import MainSkills from '@/components/MainSkills.vue';
 
 <template>
   <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll md:items-center">
-    <NavigationMain/>
+    <NavigationMain />
     <MainAboutMe />
     <MainEducation />
     <MainCourses />
     <MainWorkExperience />
     <MainProjects />
-    <MainSkills />
+    <MainSkills/>
   </main>
 </template>
