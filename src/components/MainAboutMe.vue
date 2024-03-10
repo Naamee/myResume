@@ -1,18 +1,18 @@
 <script setup>
 import MainIconContainer from '@/components/MainIconContainer.vue'
 
-import {  onMounted, ref, watch } from 'vue'
-import { useElementVisibility } from '@vueuse/core'
-import { useScrollStore } from '@/stores/scrollStore';
+// import {  onMounted, ref, watch } from 'vue'
+// import { useElementVisibility } from '@vueuse/core'
+// import { useScrollStore } from '@/stores/scrollStore';
 
-const scrollStore = useScrollStore()
+// const scrollStore = useScrollStore()
 
-const target = ref(null)
-const targetIsVisible = useElementVisibility(target)
+// const target = ref(null)
+// const targetIsVisible = useElementVisibility(target)
 
-watch (targetIsVisible, (isVisible) => {
-  scrollStore.setTargetIsVisible(1, isVisible)
-})
+// watch (targetIsVisible, (isVisible) => {
+//   scrollStore.setTargetIsVisible(1, isVisible)
+// })
 </script>
 
 <template>
