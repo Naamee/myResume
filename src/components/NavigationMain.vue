@@ -1,21 +1,5 @@
 <script setup>
-import { watchEffect } from 'vue'
 import NavigationButton from "@/components/NavigationButton.vue"; 
-import { useScrollStore } from '@/stores/scrollStore';
-
-const scrollStore = useScrollStore();
-let highlightText = scrollStore.pages[scrollStore.currentPageNo]
-
-const checkScroll = () => {    
-    const pages = scrollStore.pages
-    const pageNo = Object.keys(pages).find(key => pages[key] === pages[scrollStore.currentPageNo])
-    scrollStore.setCurrentPage(Number(pageNo))
-}
-
-watchEffect(() => {
-    checkScroll()
-    highlightText = scrollStore.pages[scrollStore.currentPageNo]
-})
 </script>
 
 <template>
