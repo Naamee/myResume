@@ -8,7 +8,7 @@ import MainCourses from '@/components/MainCourses.vue';
 </script>
 
 <template>
-  <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll md:items-center">
+  <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll items-center">
     <NavigationMain />
     <MainHome />
     <MainEducation />

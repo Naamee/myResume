@@ -11,7 +11,8 @@ export default {
       },
       backgroundImage: {
         'gradient-5': 'linear-gradient(5deg, var(--tw-gradient-stops))',
-        'gradient-358': 'linear-gradient(358deg, var(--tw-gradient-stops))'
+        'gradient-358': 'linear-gradient(358deg, var(--tw-gradient-stops))',
+        'star-pattern': 'url("/src/assets/StarBackground.jpg")',
 
       },
     },

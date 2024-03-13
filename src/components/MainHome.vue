@@ -15,7 +15,7 @@ watch (targetIsVisible, (isVisible) => {
 </script>
 
 <template>
-  <div ref="target" class="flex snap-start min-h-lvh w-full items-center justify-center">
+  <div ref="target" class="bg-black flex flex-col md:flex-row snap-start min-h-lvh w-full items-center justify-center">
     <!-- Profile Picture -->
     <img  class="h-64" alt="profilePicture" src="../assets/profilePicture.jpg" />
     <div class="flex flex-col ml-10 text-gray-300 text-balance whitespace-nowrap text-clip w-5/12">
