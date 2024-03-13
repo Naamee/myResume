@@ -11,10 +11,9 @@ const isHidden = ref(false)
 
 <template>
   <div @mouseover="isHidden = true" @mouseleave="isHidden = false" class="flex space-x-5 items-center">
-    <button class="w-3 h-3 rounded-full border border-gray-800" :class="props.isVisible===true?'bg-sky-950':'bg-gray-400'"></button>
-    <Transition>
-        <p v-if="isHidden" class="absolute mt-10 -left-5 text-nowrap text-sm text-white">{{ props.btnText }}</p>
-    </Transition>
+    <button class=""
+      :class="props.isVisible === true ? 'text-sky-950' : 'text-gray-400'"> {{ props.btnText }}
+    </button>
   </div>
 </template>
 
