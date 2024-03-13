@@ -15,11 +15,17 @@ watch (targetIsVisible, (isVisible) => {
 </script>
 
 <template>
-  <div ref="target" class="flex flex-col snap-start min-h-lvh w-full items-center justify-center">
+  <div ref="target" class="flex snap-start min-h-lvh w-full items-center justify-center">
     <!-- Profile Picture -->
-    <img  class="h-60" alt="profilePicture" src="../assets/profilePicture.jpg" />
-    <!-- Name -->
-    <h1 class="mt-5 text-gray-200 text-3xl">Ahmed Naamee Akram</h1>
-    <MainIconContainer class="mt-1" />
+    <img  class="h-64" alt="profilePicture" src="../assets/profilePicture.jpg" />
+    <div class="flex flex-col ml-10 text-gray-300 text-balance whitespace-nowrap text-clip w-5/12">
+          <!-- Name -->
+      <h1 class="mt-5 text-7xl">Ahmed Naamee Akram</h1>
+      <p>Accountant / Auditor / Developer(?)</p>
+      <div class="mt-4">
+        <p>IT Stuff(?):</p>
+        <MainIconContainer class="mt-1"/>
+    </div>
+  </div>
   </div>
 </template>

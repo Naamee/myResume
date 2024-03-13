@@ -17,7 +17,7 @@ const icons = [
 </script>
 
 <template>
-  <div class="relative flex justify-center text-sky-600/30 space-x-2">
+  <div class="relative flex text-sky-600/30 space-x-2">
     <!-- Icons -->
     <img
       v-for="icon in icons"
@@ -29,7 +29,5 @@ const icons = [
       :alt="icon.name"
       :src="icon.src"
     />
-    <!-- Icon Name -->
-    <p class="absolute top-7 text-xs font-medium text-sky-900">{{ iconName }}</p>
   </div>
 </template>
