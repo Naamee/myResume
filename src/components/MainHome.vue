@@ -9,7 +9,7 @@ const target = ref(null)
 const visibilityStore = useVisibilityStore()
 const targetIsVisible = useElementVisibility(target, { threshold: 0.5 })
 
-watch (targetIsVisible, (isVisible) => {
+watch(targetIsVisible, (isVisible) => {
   visibilityStore.toggleVisiblity(1, isVisible)
 })
 </script>
@@ -17,15 +17,16 @@ watch (targetIsVisible, (isVisible) => {
 <template>
   <div ref="target" class="bg-black flex flex-col md:flex-row snap-start min-h-lvh w-full items-center justify-center">
     <!-- Profile Picture -->
-    <img  class="h-64" alt="profilePicture" src="../assets/profilePicture.jpg" />
-    <div class="flex flex-col ml-10 text-gray-300 text-balance whitespace-nowrap text-clip w-5/12">
-          <!-- Name -->
-      <h1 class="mt-5 text-7xl">Ahmed Naamee Akram</h1>
+    <img class="h-52 md:h-72" alt="profilePicture" src="../assets/profilePicture.jpg" />
+    <div class="flex flex-col md:ml-10 text-gray-300 text-sm items-center md:items-start">
+      <!-- Name -->
+      <h1 class="hidden md:block mt-5 text-6xl">Ahmed <br> Naamee Akram</h1>
+      <h1 class="md:hidden mt-5 text-3xl">Ahmed Naamee Akram</h1>
       <p>Accountant / Auditor / Developer(?)</p>
-      <div class="mt-4">
+      <div class="flex flex-col items-center md:items-start mt-4">
         <p>IT Stuff(?):</p>
-        <MainIconContainer class="mt-1"/>
+        <MainIconContainer class="mt-1" />
+      </div>
     </div>
-  </div>
   </div>
 </template>
