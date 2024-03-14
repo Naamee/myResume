@@ -16,8 +16,8 @@ watch(targetIsVisible, (isVisible) => {
 
 <template>
     <div ref="target"
-        class="flex snap-start min-h-lvh w-full items-center justify-center text-gray-200 bg-gradient-5 from-blue-950/25 from-70% to-80% to-black">
-        <EducationContent/>
-        <MainTablet class="ml-10"/>
+        class="flex flex-col md:flex-row md:pt-10 snap-start min-h-lvh w-full items-center justify-center text-gray-200 bg-gradient-5 from-blue-950/25 from-70% to-80% to-black">
+        <EducationContent class="hidden md:block"/>
+        <MainTablet url="src/assets/testPDF.pdf#toolbar=0&navpanes=0" class="md:ml-10"/>
     </div>
 </template>
