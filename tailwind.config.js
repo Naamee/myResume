@@ -15,6 +15,9 @@ export default {
         'star-pattern': 'url("/src/assets/StarBackground.jpg")',
 
       },
+      spacing: {
+        '100': '25rem',
+      }
     },
   },
   plugins: [

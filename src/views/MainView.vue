@@ -8,7 +8,7 @@ import MainCourses from '@/components/MainCourses.vue';
 </script>
 
 <template>
-  <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll items-center scrollbar scrollbar-w-1 scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500 scrollbar-thumb-rounded-full">
+  <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll items-center scrollbar scrollbar-w-1 scrollbar-thumb-rounded-full scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500">
     <NavigationMain />
     <MainHome />
     <MainEducation />
