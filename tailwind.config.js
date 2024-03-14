@@ -17,7 +17,16 @@ export default {
       },
       spacing: {
         '100': '25rem',
-      }
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateY(20%)' },
+          to: { transform: 'translateY(-100%)' },
+        },
+      },
     },
   },
   plugins: [

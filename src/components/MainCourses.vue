@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import { useElementVisibility } from '@vueuse/core'
 import { useVisibilityStore } from '@/stores/visibilityStore';
+import CoursesContent from '@/components/CoursesContent.vue'
 
 const target = ref(null)
 const visibilityStore = useVisibilityStore()
@@ -14,7 +15,6 @@ watch (targetIsVisible, (isVisible) => {
 
 <template>
     <div ref="target" class="flex flex-col snap-start min-h-lvh w-full items-center justify-center text-white bg-gradient-358 from-black from-70%  to-90% to-blue-950/25">
-        <h1 class="text-5xl">Courses</h1>
-        <p></p>
+      <CoursesContent />
     </div>
 </template>
