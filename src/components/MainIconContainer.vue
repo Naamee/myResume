@@ -4,15 +4,15 @@ import { ref } from 'vue'
 const iconName = ref(null)
 
 const icons = [
-  { name: 'HTML', src: 'public/logos/html-5.png' },
-  { name: 'CSS', src: 'public/logos/css-3.png' },
-  { name: 'JavaScript', src: 'public/logos/js.png' },
-  { name: 'Node.js', src: 'public/logos/node-js.png' },
-  { name: 'Vue.js', src: 'public/logos/vue-js.png' },
-  { name: 'TailwindCSS', src: 'public/logos/tailwind-icon.svg' },
-  { name: 'Python', src: 'public/logos/python.png' },
-  { name: 'Django', src: 'public/logos/django.png' },
-  { name: 'PostgreSQL', src: 'public/logos/postgre.png' }
+  { name: 'HTML', src: 'logos/html-5.png' },
+  { name: 'CSS', src: 'logos/css-3.png' },
+  { name: 'JavaScript', src: 'logos/js.png' },
+  { name: 'Node.js', src: 'logos/node-js.png' },
+  { name: 'Vue.js', src: 'logos/vue-js.png' },
+  { name: 'TailwindCSS', src: 'logos/tailwind-icon.svg' },
+  { name: 'Python', src: 'logos/python.png' },
+  { name: 'Django', src: 'logos/django.png' },
+  { name: 'PostgreSQL', src: 'logos/postgre.png' }
 ]
 </script>
 

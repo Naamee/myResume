@@ -7,7 +7,7 @@ const isVisible = visibilityStore.isVisible
 </script>
 
 <template>
-    <div class="fixed flex space-x-2 text-sm lg:text-base mt-10">
+    <div class="fixed flex space-x-2 text-xs md:text-sm lg:text-base mt-10">
         <div class="mt-3 border-t border-gray-400 w-5 md:w-24"></div>
         <NavigationButton btnText="Home" :isVisible="isVisible[1]" />
         <NavigationButton btnText="Education" :isVisible="isVisible[2]" />
