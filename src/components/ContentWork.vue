@@ -25,11 +25,11 @@ const work = [
 
 <template>
     <!-- Main Container -->
-    <div class="mt-5 text-center text-sm">
+    <div class="mt-5 text-center text-sm lg:text-base">
             <div>
                 <div v-for="experience in work" class="flex flex-col rounded-sm p-3">
-                    <p class="font-light text-white/50 text-xs">{{ experience.year }}</p>
-                    <p class="text-md">{{ experience.name }}</p>
+                    <p class="font-light text-white/50 text-xs lg:text-sm">{{ experience.year }}</p>
+                    <p class="text-base lg:text-lg">{{ experience.name }}</p>
                     <p class="italic">{{ experience.institution }}</p>
                 </div>
             </div>
