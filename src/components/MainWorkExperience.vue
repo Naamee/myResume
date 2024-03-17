@@ -2,6 +2,7 @@
 import { ref, watch } from 'vue'
 import { useElementVisibility } from '@vueuse/core'
 import { useVisibilityStore } from '@/stores/visibilityStore';
+import ContentWork from './ContentWork.vue';
 
 const target = ref(null)
 const visibilityStore = useVisibilityStore()
@@ -14,7 +15,8 @@ watch (targetIsVisible, (isVisible) => {
 
 <template>
     <div ref="target" class="flex flex-col snap-start min-h-lvh w-full items-center justify-center text-white bg-gradient-358 from-blue-950/25 from-70% to-80% to-black">
-        <h1 class="text-5xl">Work Experience</h1>
-        <p></p>
+      <div class="flex flex-col md:flex-row md:pt-10 snap-start min-h-lvh w-full items-center justify-center text-gray-200 bg-gradient-5 from-blue-950/25 from-70% to-80% to-black">
+        <ContentWork/>
+    </div>
     </div>
 </template>

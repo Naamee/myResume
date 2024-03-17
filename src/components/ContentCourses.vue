@@ -105,7 +105,9 @@ const courses = [
 
 <template>
     <!-- Main Container -->
-    <div class="mt-5 text-start border rounded-md text-xs h-60 w-72 overflow-hidden">
+    <div class="flex flex-col">
+        <div class="bg-black -mb-10 blur-xl w-72 h-24 z-10"></div>
+        <div class="text-center text-xs h-80 w-72 -mb-10 overflow-hidden">
             <div class="animate-infinite-scroll">
                 <div v-for="course in courses" class="flex flex-col rounded-sm p-3">
                     <p class="font-light text-white/50">{{ course.year }}</p>
@@ -114,4 +116,7 @@ const courses = [
                 </div>
             </div>
         </div>
+        <div class="bg-black blur-xl w-72 h-24 z-10"></div>
+    </div>
+
 </template>

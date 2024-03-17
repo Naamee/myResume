@@ -20,12 +20,11 @@ const education = [
 
 <template>
     <!-- Main Container -->
-    <div class="mt-5 text-start border rounded-md text-xs w-72">
+    <div class="mt-5 text-center text-sm">
             <div>
-                <!-- Bachelors -->
                 <div v-for="qualification in education" class="flex flex-col rounded-sm p-3">
-                    <p class="font-light text-white/50">{{ qualification.year }}</p>
-                    <p class="text-sm">{{ qualification.name }}</p>
+                    <p class="font-light text-white/50 text-xs">{{ qualification.year }}</p>
+                    <p class="text-md">{{ qualification.name }}</p>
                     <p class="italic">{{ qualification.institution }}</p>
                 </div>
             </div>

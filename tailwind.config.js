@@ -16,7 +16,10 @@ export default {
 
       },
       spacing: {
+        '90': '22.5rem',
         '100': '25rem',
+        '108': '27rem',
+
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
