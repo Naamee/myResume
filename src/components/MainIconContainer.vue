@@ -4,15 +4,15 @@ import { ref } from 'vue'
 const iconName = ref(null)
 
 const icons = [
-  { name: 'HTML', src: 'src/assets/logos/html-5.png' },
-  { name: 'CSS', src: 'src/assets/logos/css-3.png' },
-  { name: 'JavaScript', src: 'src/assets/logos/js.png' },
-  { name: 'Node.js', src: 'src/assets/logos/node-js.png' },
-  { name: 'Vue.js', src: 'src/assets/logos/vue-js.png' },
-  { name: 'TailwindCSS', src: 'src/assets/logos/tailwind-icon.svg' },
-  { name: 'Python', src: 'src/assets/logos/python.png' },
-  { name: 'Django', src: 'src/assets/logos/django.png' },
-  { name: 'PostgreSQL', src: 'src/assets/logos/postgre.png' }
+  { name: 'HTML', src: 'public/logos/html-5.png' },
+  { name: 'CSS', src: 'public/logos/css-3.png' },
+  { name: 'JavaScript', src: 'public/logos/js.png' },
+  { name: 'Node.js', src: 'public/logos/node-js.png' },
+  { name: 'Vue.js', src: 'public/logos/vue-js.png' },
+  { name: 'TailwindCSS', src: 'public/logos/tailwind-icon.svg' },
+  { name: 'Python', src: 'public/logos/python.png' },
+  { name: 'Django', src: 'public/logos/django.png' },
+  { name: 'PostgreSQL', src: 'public/logos/postgre.png' }
 ]
 </script>
 
