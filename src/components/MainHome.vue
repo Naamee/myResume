@@ -5,17 +5,19 @@ import { ref, watch } from 'vue'
 import { useElementVisibility } from '@vueuse/core'
 import { useVisibilityStore } from '@/stores/visibilityStore';
 
-const target = ref(null)
-const visibilityStore = useVisibilityStore()
-const targetIsVisible = useElementVisibility(target, { threshold: 0.5 })
+const home = ref(null)
+defineExpose({home})
 
-watch(targetIsVisible, (isVisible) => {
+const visibilityStore = useVisibilityStore()
+const homeIsVisible = useElementVisibility(home, { threshold: 0.5 })
+
+watch(homeIsVisible, (isVisible) => {
   visibilityStore.toggleVisiblity(1, isVisible)
 })
 </script>
 
 <template>
-  <div ref="target" class="bg-black flex flex-col md:flex-row snap-start min-h-lvh w-full items-center justify-center">
+  <div ref="home" class="bg-black flex flex-col md:flex-row snap-start min-h-lvh w-full items-center justify-center">
     <!-- Profile Picture -->
     <img class="h-52 md:h-72" alt="profilePicture" src="../assets/profilePicture.jpg" />
     <div class="flex flex-col md:ml-10 text-gray-300 text-sm 2xl:text-base items-center md:items-start">
