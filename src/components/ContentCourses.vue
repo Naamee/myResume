@@ -107,11 +107,11 @@ const courses = [
     <!-- Main Container -->
     <div class="flex flex-col">
         <div class="bg-black -mb-10 blur-xl w-72 h-24 z-10"></div>
-        <div class="text-center text-xs lg:text-sm h-80 w-72 -mb-10 overflow-hidden">
+        <div class="text-center text-xs 2xl:text-sm h-80 w-72 -mb-10 overflow-hidden">
             <div class="animate-infinite-scroll">
                 <div v-for="course in courses" class="flex flex-col rounded-sm p-3">
                     <p class="font-light text-white/50">{{ course.year }}</p>
-                    <p class="text-sm lg:text-base">{{ course.name }}</p>
+                    <p class="text-sm 2xl:text-base">{{ course.name }}</p>
                     <p class="italic">{{ course.institution }}</p>
                 </div>
             </div>

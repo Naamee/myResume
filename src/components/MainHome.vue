@@ -18,10 +18,10 @@ watch(targetIsVisible, (isVisible) => {
   <div ref="target" class="bg-black flex flex-col md:flex-row snap-start min-h-lvh w-full items-center justify-center">
     <!-- Profile Picture -->
     <img class="h-52 md:h-72" alt="profilePicture" src="../assets/profilePicture.jpg" />
-    <div class="flex flex-col md:ml-10 text-gray-300 text-sm lg:text-base items-center md:items-start">
+    <div class="flex flex-col md:ml-10 text-gray-300 text-sm 2xl:text-base items-center md:items-start">
       <!-- Name -->
-      <h1 class="hidden md:block mt-5 text-6xl lg:text-7xl">Ahmed <br> Naamee Akram</h1>
-      <h1 class="md:hidden mt-5 text-3xl lg:text-4xl">Ahmed Naamee Akram</h1>
+      <h1 class="hidden md:block mt-5 text-6xl 2xl:text-7xl">Ahmed <br> Naamee Akram</h1>
+      <h1 class="md:hidden mt-5 text-3xl 2xl:text-4xl">Ahmed Naamee Akram</h1>
       <p>Accountant / Auditor / Developer(?)</p>
       <div class="flex flex-col items-center md:items-start mt-4">
         <p>IT Stuff(?):</p>
