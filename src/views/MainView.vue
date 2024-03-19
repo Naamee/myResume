@@ -6,6 +6,7 @@ import MainEducation from '@/components/MainEducation.vue'
 import MainWorkExperience from '@/components/MainWorkExperience.vue';
 import MainProjects from '@/components/MainProjects.vue';
 import MainCourses from '@/components/MainCourses.vue';
+import TheAnimation from '@/components/TheAnimation.vue'
 
 const home = ref('')
 const education = ref('')
@@ -30,6 +31,7 @@ function scrollToElement(element) {
 </script>
 
 <template>
+  <TheAnimation />
   <main class="flex flex-col h-screen snap-y snap-mandatory overflow-y-scroll items-center scrollbar scrollbar-w-1 scrollbar-thumb-rounded-full scrollbar-thumb-gray-400 hover:scrollbar-thumb-gray-500">
     <NavigationMain @home="scrollToElement('home')" @education="scrollToElement('education')" @courses="scrollToElement('courses')" @work="scrollToElement('work')" @projects="scrollToElement('projects')"/>
     <MainHome ref="home"/>
