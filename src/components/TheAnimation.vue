@@ -25,7 +25,7 @@ const random = () => Math.floor(Math.random() * 100)
         transform: translateX(-50px);
     }
     100% {
-        transform: translateY(0px) translateX(50px);
+        transform: translateY(0px);
     }
 }
 </style>
